@@ -1,0 +1,12 @@
+<html>
+<head>
+</head>
+<body style="margin: 0px;">
+<img style="margin: 0 auto; display: block;"  src="img/home.png" usemap="#links" >
+<map name="links">
+% for link in links:
+  <area shape="rect" coords="${','.join(link[1])}" alt="TODO" href="detail/${link[0]}.html">
+% endfor
+</map>
+</body>
+</html>
